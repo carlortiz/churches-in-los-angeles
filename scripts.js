@@ -264,7 +264,7 @@ let churches = [
             },
         ],
         languages: ["English", "Spanish"],
-        image: "",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCfgf7MbEOHhvVkM6BXKrEHNsKI20gQX7wSNzxW3c3iA&s",
         website: "https://stanthonysg.org/",
     },
     {
@@ -277,7 +277,7 @@ let churches = [
             },
         ],
         languages: ["English"],
-        image: "",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYAx80OmvFzyjeTHby9wWpr0S_1pqzWVI7m_dMzax8Tg&s",
         website: "https://sangabrielcommunity.org/",
     },
     {
@@ -290,7 +290,7 @@ let churches = [
             },
         ],
         languages: ["English"],
-        image: "",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHilXbK_uR5NZW2p4lspRy1BKcFVOf-P3s6TiSTcI5hA&s",
         website: "https://www.sgvconnections.com/sunday-service",
     }, 
     { // SOUTH BAY
@@ -311,7 +311,7 @@ let churches = [
             },
         ],
         languages: ["English"],
-        image: "",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-ZxyhYhVvihtMn8oQY-mCUXl8OenvFQ_XjsrFbLSuoA&s",
         website: "https://southbaycommunitychurch.com/",
     },
     {
@@ -328,7 +328,7 @@ let churches = [
             },
         ],
         languages: ["English"],
-        image: "",
+        image: "https://images.squarespace-cdn.com/content/v1/53da9aefe4b07d85121c4f2b/1501092227393-6H3DMLR2GODLVZBCF0T0/JSBC-8.jpg",
         website: "https://www.journeysouthbay.org/",
     },
     {
@@ -341,7 +341,7 @@ let churches = [
             },
         ],
         languages: ["English"],
-        image: "",
+        image: "https://static.wixstatic.com/media/8a1d68_6196adfe8d1d47c7b89d1b15e7029d45~mv2.jpg/v1/fill/w_640,h_398,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/8a1d68_6196adfe8d1d47c7b89d1b15e7029d45~mv2.jpg",
         website: "https://www.sbcog.org/",
     }, 
     { // ANTELOPE VALLEY
@@ -374,7 +374,7 @@ let churches = [
             },
         ],
         languages: ["English"],
-        image: "",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLC3i3VncOOOMbwIMPsao4MV0k-vFIhYcSZZWwZZ0Jmg&s",
         website: "https://www.edwards.af.mil/About/Fact-Sheets/Display/Article/393896/412th-test-wing-chaplain-service/",
     },
     {
@@ -391,7 +391,7 @@ let churches = [
             },
         ],
         languages: ["English"],
-        image: "",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-Q1mxaK_5VZhN88pHHc7aiDea8_KLm1vrcJ1WoKjV5Q&s",
         website: "https://www.avchurch.org/",
     },
     {
@@ -408,7 +408,7 @@ let churches = [
             },
         ],
         languages: ["English"],
-        image: "",
+        image: "https://s3-media0.fl.yelpcdn.com/bphoto/TtAvzMwN4vH-jGpqK2xE6g/1000s.jpg",
         website: "https://www.centralchristian.org/",
     },
     { // SOUTHEAST LOS ANGELES
@@ -425,7 +425,7 @@ let churches = [
             },
         ],
         languages: ["English", "Spanish"],
-        image: "",
+        image: "https://commongoodmag.com/wp-content/uploads/2023/05/NJN08232-scaled.jpg",
         website: "https://www.revivelachurch.org/",
     }, 
     {
@@ -442,7 +442,7 @@ let churches = [
             },
         ],
         languages: ["English"],
-        image: "",
+        image: "https://www.monolithic.org/vault/img/2011/05/10/4dc92b85c29e068473000b46/large/citybible02.jpg",
         website: "https://www.citybible.church/",
     }, 
     {
@@ -459,7 +459,7 @@ let churches = [
             },
         ],
         languages: ["English"],
-        image: "",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdjNpUrVkFlYsgUSFSKtQ9UiCWHMJ0KWp8vhicC6peYQ&s",
         website: "https://firehousechurch.info/",
     }, 
     { // SANTA CLARITA
@@ -476,7 +476,7 @@ let churches = [
             },
         ],
         languages: ["English"],
-        image: "",
+        image: "https://res.cloudinary.com/faithstreet-production/image/upload/c_fill,h_286,w_286/v1594833087/viqcuqfogr2bemgjumju.jpg",
         website: "https://mysccf.com/",
     },
     {
@@ -493,7 +493,7 @@ let churches = [
             },
         ],
         languages: ["English"],
-        image: "",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQpurflQkYZlmVugGjGfn7EMkakrlft0VpPSX8jKywwA&s",
         website: "https://www.gracebaptist.org/",
     },
     {
@@ -514,7 +514,7 @@ let churches = [
             },
         ],
         languages: ["English"],
-        image: "",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpepEFMsjLo47UxpFwCF4dNlX7qgs3gwBYRsZY7dCJFw&s",
         website: "https://www.ielevatechurch.com/",
     },
 ];
@@ -578,13 +578,3 @@ function editCardContent(card, newTitle, newImageURL, newRegion,
 
 // This calls the addCards() function when the page is first loaded
 document.addEventListener("DOMContentLoaded", showCards);
-
-function quoteAlert() {
-    console.log("Button Clicked!")
-    alert("I guess I can kiss heaven goodbye, because it got to be a sin to look this good!");
-}
-
-function removeLastCard() {
-    titles.pop(); // Remove last item in titles array
-    showCards(); // Call showCards again to refresh
-}
