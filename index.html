@@ -13,6 +13,7 @@
         <h1 class="title">Churches in LA</h1>
     </header>
     
+    <!-- This div tag contains the actual cards themselves -->
     <div id="card-container">
         
     </div>
@@ -20,15 +21,23 @@
 
     <div class="card" style="display: none;">
         <div class="card-content">
-            <h2>TV Show Title</h2>
-            <img src="" alt="TV Show Poster">
+            <h2><a href="#" target="_blank"></a></h2>
+            <img src="" alt="Image Coming Soon">
             <ul>
-                <li>Bullet Point 1</li>
-                <li>Bullet Point 2</li>
-                <li>Bullet Point 3</li>
+                <li class="region"></li>
+            </ul>
+            <ul>
+                <li>Services: </li>
+                <ul class="service-list">
+                    <!-- Each service (day and time) will be added dynamically here -->
+                </ul>
+            </ul>
+            <ul class="language-list">
+                <!-- Languages will be added dynamically here -->
             </ul>
         </div>
     </div>
+
     <div class="footer">
         <button onclick="quoteAlert();">
             Get A Quote!

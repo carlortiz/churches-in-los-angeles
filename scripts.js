@@ -48,6 +48,7 @@ let churches = [
         ],
         languages: ["English"],
         image: "https://irwinseating-images.s3.amazonaws.com/Installations/Shepherd-Church/Shepherd-Church-0590.jpg",
+        website: "https://www.theshepherd.org/location",
     },
     {
         name: "Sheperd of the Hills Church - Woodland Hills",
@@ -68,6 +69,7 @@ let churches = [
         ],
         languages: ["English"],
         image: "https://i0.wp.com/premiumsignsolutions.com/wp-content/uploads/2023/03/Monument-sign1_Shepherd-Chruch_Woodland-Hills3.jpg?resize=300%2C200&ssl=1",
+        website: "https://www.theshepherd.org/location",
     },
     {
         name: "Northridge United Methodist Church",
@@ -84,6 +86,7 @@ let churches = [
         ],
         languages: ["English", "Korean"],
         image: "https://scng-dash.digitalfirstmedia.com/wp-content/uploads/2019/11/Northridgeunitedmeth-16x9.jpgnov2019.jpg",
+        website: "https://northridgeumc.org/",
     }
 ];
 
@@ -97,20 +100,46 @@ function showCards() {
         let church = churches[i];
 
         const nextCard = templateCard.cloneNode(true); // Copy the template card
-        editCardContent(nextCard, church.name, church.image); // Edit title and image
+        editCardContent(nextCard, church.name, church.image, church.region, 
+                        church.services, church.languages, church.website);
         cardContainer.appendChild(nextCard); // Add new card to the container
     }
 }
 
-function editCardContent(card, newTitle, newImageURL) {
+function editCardContent(card, newTitle, newImageURL, newRegion, 
+                        newServices, newLanguages, newWebsite) {
     card.style.display = "block";
 
     const cardHeader = card.querySelector("h2");
-    cardHeader.textContent = newTitle;
+    const link = cardHeader.querySelector("a");
+    link.textContent = newTitle;
+    link.href = newWebsite; // Set the href attribute to the website URL
+    link.target = "_blank"; // Open the link in a new tab
 
     const cardImage = card.querySelector("img");
     cardImage.src = newImageURL;
-    cardImage.alt = newTitle + " Poster";
+    cardImage.alt = "Image Coming Soon";
+
+    const cardRegion = card.querySelector(".region");
+    cardRegion.textContent = "Region: " + newRegion;
+
+    // Display the services
+    const serviceList = card.querySelector(".service-list");
+    serviceList.innerHTML = ""; // Clear any existing services
+
+    // Loop through the services array and add each service as a bullet point
+    newServices.forEach(newServices => {
+        const serviceItem = document.createElement("li");
+        serviceItem.textContent = `${newServices.day}, ${newServices.time}`;
+        serviceList.appendChild(serviceItem);
+    });
+
+    // Concatenate elements in languages array to create one string with all languages
+    const languageList = card.querySelector(".language-list");
+    languageList.innerHTML = ""; // Clear any existing languages
+    const languagesItem = document.createElement("li");
+    languagesItem.textContent = "Languages: " + newLanguages.join(", ");
+    languageList.appendChild(languagesItem);
 
     // You can use console.log to help you debug!
     // View the output by right clicking on your website,
