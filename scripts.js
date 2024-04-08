@@ -616,9 +616,14 @@ function addFilterButtonListeners() {
 // This function filters the cards based on the selected region
 function filterCardsByRegion(region) {
     const cards = document.querySelectorAll('.card');
-    cards.forEach(card => {
+    const blueprintCardIndex = cards.length - 1; // to not show the predefined html card
+
+    cards.forEach((card, index) => {
         const cardRegion = card.querySelector('.region').textContent.replace('Region: ', '');
-        if (region.toLowerCase() === 'all' || cardRegion.toLowerCase() === region.toLowerCase()) {
+        
+        if (index === blueprintCardIndex) {
+            card.style.display = 'none';
+        } else if (region.toLowerCase() === 'all' || cardRegion.toLowerCase() === region.toLowerCase()) {
             card.style.display = 'block';
         } else {
             card.style.display = 'none'; 
