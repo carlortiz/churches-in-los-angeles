@@ -635,9 +635,44 @@ function filterCardsByRegion(region) {
     });
 }
 
+// This function adds event listener to the search input field
+function addSearchEventListener() {
+    const searchButton = document.getElementById("searchButton");
+    searchButton.addEventListener("click", searchByName);
+    searchInput.addEventListener("keydown", function(event) {
+        if (event.key === "Enter") {
+            searchByName();
+        }
+    });
+}
+
+function searchByName() {
+    const cards = document.querySelectorAll('.card');
+    const blueprintCardIndex = cards.length - 1; // to not show the predefined html card
+    const searchInput = document.getElementById("searchInput");
+    const searchQuery = searchInput.value.trim().toLowerCase(); // Trim whitespace and convert to lowercase
+    const displayedCards = document.querySelectorAll('.card'); // Select all cards
+    
+    displayedCards.forEach((card, index) => {
+        const cardTitle = card.querySelector('h2').textContent.toLowerCase(); // Get the church name from the card
+
+        if (index === blueprintCardIndex) {
+            card.style.display = 'none';
+        }
+        else if (searchQuery === '') {
+            card.style.display = 'block'; 
+        } else if (cardTitle.includes(searchQuery)) {
+            card.style.display = 'block'; 
+        } else {
+            card.style.display = 'none'; 
+        }
+    });
+}
+
 // This calls necessary functions when the page is first loaded
 document.addEventListener("DOMContentLoaded", () => {
     showCards();
     showFilterButtons(churches); 
     addFilterButtonListeners();
+    addSearchEventListener();
 });
