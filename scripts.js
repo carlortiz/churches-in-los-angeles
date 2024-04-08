@@ -417,16 +417,16 @@ let churches = [
         services: [
             {
                 day: "Sunday",
-                time: "11:00 AM",
+                time: "10:00 AM",
             },
             {
                 day: "Sunday",
-                time: "7:30 PM",
+                time: "12:00 PM",
             },
         ],
         languages: ["English", "Spanish"],
-        image: "https://commongoodmag.com/wp-content/uploads/2023/05/NJN08232-scaled.jpg",
-        website: "https://www.revivelachurch.org/",
+        image: "https://s3-media0.fl.yelpcdn.com/bphoto/n6XXQjW5HhSlaAJFWDF2aQ/l.jpg",
+        website: "https://www.lifeatrevive.com/",
     }, 
     {
         name: "City Bible Church",
@@ -542,7 +542,7 @@ function editCardContent(card, newTitle, newImageURL, newRegion,
     const cardHeader = card.querySelector("h2");
     const link = cardHeader.querySelector("a");
     link.textContent = newTitle;
-    link.href = newWebsite; // Set the href attribute to the website URL
+    link.href = newWebsite;
     link.target = "_blank"; // Open the link in a new tab
 
     const cardImage = card.querySelector("img");
@@ -569,12 +569,66 @@ function editCardContent(card, newTitle, newImageURL, newRegion,
     const languagesItem = document.createElement("li");
     languagesItem.textContent = "Languages: " + newLanguages.join(", ");
     languageList.appendChild(languagesItem);
-
-    // You can use console.log to help you debug!
-    // View the output by right clicking on your website,
-    // select "Inspect", then click on the "Console" tab
-    console.log("new card:", newTitle, "- html: ", card);
 }
 
-// This calls the addCards() function when the page is first loaded
-document.addEventListener("DOMContentLoaded", showCards);
+// This function adds filter buttons to the page
+function showFilterButtons(churches) {
+    const filterButtonsContainer = document.getElementById("filter-buttons");
+
+    const regions = getUniqueRegions(churches);
+
+    const allButton = createFilterButton("All");
+    filterButtonsContainer.appendChild(allButton);
+
+    regions.forEach(region => {
+        const button = createFilterButton(region);
+        filterButtonsContainer.appendChild(button);
+    });
+}
+
+// Helper function to get unique regions from the churches array
+function getUniqueRegions(churches) {
+    const regions = new Set(); // a set stores unique, individual items (useful for retrieving unique regions)
+    churches.forEach(church => regions.add(church.region)); 
+    return Array.from(regions); // making a new array to return (arrays are used to iterate through each region)
+}
+
+// Helper function to create a filter button
+function createFilterButton(region) {
+    const button = document.createElement("button");
+    button.className = "button-74";
+    button.textContent = region;
+    button.dataset.region = region.toLowerCase().replace(/\s+/g, ' '); // clean and readable data attribute
+    return button;
+}
+
+// This function adds event listeners to the filter buttons
+function addFilterButtonListeners() {
+    const filterButtons = document.querySelectorAll('.button-74');
+    filterButtons.forEach(button => {
+        const region = button.dataset.region; 
+        button.addEventListener('click', () => {
+            filterCardsByRegion(region);
+        });
+    });
+}
+
+// This function filters the cards based on the selected region
+function filterCardsByRegion(region) {
+    const cards = document.querySelectorAll('.card');
+    cards.forEach(card => {
+        const cardRegion = card.querySelector('.region').textContent.replace('Region: ', '');
+        if (region.toLowerCase() === 'all' || cardRegion.toLowerCase() === region.toLowerCase()) {
+            card.style.display = 'block';
+        } else {
+            card.style.display = 'none'; 
+        }
+    });
+}
+
+// This calls necessary functions when the page is first loaded
+document.addEventListener("DOMContentLoaded", () => {
+    showCards();
+    showFilterButtons(churches); 
+    addFilterButtonListeners();
+});
