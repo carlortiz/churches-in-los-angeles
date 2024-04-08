@@ -24,6 +24,10 @@
  */
 
 // This array of objects stores all the data for each individual church.
+// Credit to the church websites for the information
+// These images were not taken by me and have been taken from Yelp & Google Images
+// Credit to image owners, if any issues arise please contact me and I will take it down:
+// Email: mr.carlortiz@gmail.com
 let churches = [
     { // SAN FERNANDO VALLEY
         name: "Sheperd of the Hills Church - Porter Ranch",
