@@ -104,6 +104,97 @@ let churches = [
         image: "https://scng-dash.digitalfirstmedia.com/wp-content/uploads/2019/11/Northridgeunitedmeth-16x9.jpgnov2019.jpg",
         website: "https://northridgeumc.org/",
     },
+    {
+        name: "The Church of Jesus Christ of Latter-day Saints",
+        region: "San Fernando Valley",
+        services: [
+            {
+                day: "Sunday",
+                time: "9:30 AM",
+            },
+        ],
+        languages: ["English"],
+        image: "https://churchofjesuschristtemples.org/assets/img/temples/los-angeles-california-temple/los-angeles-california-temple-38945-main.jpg",
+        website: "https://local.churchofjesuschrist.org/en/us/ca/chatsworth/10123-oakdale-avenue?utm_source=gmb&utm_medium=yext&gad_source=1&gclid=Cj4KCQjwztOwBhD7ARItAPDKnkDJKtp1uw3xeL-mPT3BPyNOf-rsf3vxi7XrIltFT8M4iL8SAXZRVshuGgKXqRAC8P8HAQ",
+    },
+    {
+        name: "St Catherine of Siena Catholic Church",
+        region: "San Fernando Valley",
+        services: [
+            {
+                day: "Sunday",
+                time: "8:00 AM",
+            },
+            {
+                day: "Sunday",
+                time: "9:30 AM",
+            },
+        ],
+        languages: ["English", "Spanish"],
+        image: "https://upload.wikimedia.org/wikipedia/commons/a/a5/St._Catherine_of_Siena_Catholic_Church_Reseda.JPG",
+        website: "https://www.scsparish.org/",
+    },
+    {
+        name: "Santa Rosa Catholic Church",
+        region: "San Fernando Valley",
+        services: [
+            {
+                day: "Sunday",
+                time: "6:30 AM",
+            },
+            {
+                day: "Sunday",
+                time: "8:00 AM",
+            },
+            {
+                day: "Sunday",
+                time: "9:30 AM",
+            },
+            {
+                day: "Sunday",
+                time: "11:00 AM",
+            },
+            {
+                day: "Sunday",
+                time: "12:30 PM",
+            },
+            {
+                day: "Sunday",
+                time: "2:00 PM",
+            },
+            {
+                day: "Sunday",
+                time: "3:30 PM",
+            },
+            {
+                day: "Sunday",
+                time: "5:00 PM"
+            },
+            {
+                day: "Saturday",
+                time: "6:30 PM",
+            },
+            {
+                day: "Monday",
+                time: "7:00 PM",
+            },
+            {
+                day: "Monday",
+                time: "8:00 PM",
+            },
+            {
+                day: "Tuesday-Friday",
+                time: "7:00 PM",
+            },
+            {
+                day: "Saturday",
+                time: "8:00 PM",
+            },
+        ],
+        languages: ["English", "Spanish"],
+        image: "https://d3asryxs3chhp9.cloudfront.net/data/4164/thumbnails/large/43d8473c04.jpg",
+        website: "https://santarosachurchsf.org/",
+    },
     { // CENTRAL LOS ANGELES
         name: "Our Lady Queen of Angels Catholic Church",
         region: "Central Los Angeles",
@@ -129,7 +220,7 @@ let churches = [
                 time: "1:30 AM",
             },
             {
-                day: "Monday to Friday",
+                day: "Monday-Friday",
                 time: "12:00 PM",
             },
         ],
@@ -167,17 +258,85 @@ let churches = [
                 time: "12:30 PM",
             },
             {
-                day: "Monday to Friday",
+                day: "Monday-Friday",
                 time: "7:00 AM",
             },
             {
-                day: "Monday to Friday",
+                day: "Monday-Friday",
                 time: "12:10 PM",
             },
         ],
         languages: ["English", "Spanish"],
         image: "https://rafaelmoneo.com/wp/wp-content/uploads/2016/10/0620-09Fweb.jpg",
         website: "https://olacathedral.org/mass-schedule",
+    },
+    {
+        name: "Greater New Bethel Baptist Church",
+        region: "Central Los Angeles",
+        services: [
+            {
+                day: "Sunday",
+                time: "9:30 AM",
+            },
+            {
+                day: "Sunday",
+                time: "10:45 AM",
+            },
+        ],
+        languages: ["English"],
+        image: "https://i3.ypcdn.com/blob/7be3cfbc2d16b07537057e49f837293952a221f2",
+        website: "https://www.greaternewbethelbaptistchurch.org/?gad_source=1&gclid=Cj4KCQjwztOwBhD7ARItAPDKnkCNX8Fyg7bZezBa99cl8rBq5j3girCzkE_bQEU0j1DF3oB44Z4xtI0gGgIgGxAC8P8HAQ",
+    },
+    {
+        name: "InsideOut Church Los Angeles",
+        region: "Central Los Angeles",
+        services: [
+            {
+                day: "Sunday",
+                time: "10:00 AM",
+            },
+        ],
+        languages: ["English"],
+        image: "https://images.squarespace-cdn.com/content/v1/63bda4e8e2456a1563bb1204/f866157f-c91d-41a6-9088-d149344d4ef9/2.jpg",
+        website: "https://www.insideoutla.org/",
+    },
+    {
+        name: "First Congregational Church of Los Angeles",
+        region: "Central Los Angeles",
+        services: [
+            {
+                day: "Sunday",
+                time: "10:15 AM",
+            },
+        ],
+        languages: ["English"],
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRi5EgVQ449i0NROpPSb8nx9H0m-jZ8sfM-_qKjz_tqCw&s",
+        website: "https://www.fccla.org/visit",
+    },
+    {
+        name: "Core Church LA",
+        region: "Central Los Angeles",
+        services: [
+            {
+                day: "Sunday",
+                time: "8:30 AM",
+            },
+            {
+                day: "Sunday",
+                time: "10:30 AM",
+            },
+            {
+                day: "Sunday",
+                time: "12:30 PM",
+            },
+            {
+                day: "Thursdays",
+                time: "7:30 PM",
+            },
+        ],
+        languages: ["English"],
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQw-OXPifbuTEI4RKalfhcJY0CYjbb-2tFak1vBAszFFw&s",
+        website: "https://www.corechurchla.org/",
     },
     { // WESTSIDE
         name: "The Westside Church",
@@ -201,20 +360,20 @@ let churches = [
         region: "Westside",
         services: [
             {
-                day: "Sunday (English)",
-                time: "9:00 AM",
+                day: "Sunday",
+                time: "9:00 AM (English)",
             },
             {
-                day: "Sunday (Spanish)",
-                time: "9:00 PM",
+                day: "Sunday",
+                time: "9:00 PM (Spanish)",
             },
             {
-                day: "Sunday (English)",
-                time: "11:00 AM",
+                day: "Sunday",
+                time: "11:00 AM (English)",
             },
             {
-                day: "Sunday (Farsi)",
-                time: "11:00 PM",
+                day: "Sunday",
+                time: "11:00 AM (Farsi)",
             },
         ],
         languages: ["English", "Spanish", "Farsi"],
@@ -241,7 +400,33 @@ let churches = [
         languages: ["English"],
         image: "https://images.squarespace-cdn.com/content/v1/5edd01c858851067a69b290e/a7c2a343-71d4-4051-af6b-c57489f200e7/20230827_105411_0003.jpg",
         website: "https://www.vintagechurchla.com/new",
-    }, 
+    },
+    {
+        name: "University Bible Church",
+        region: "Westside",
+        services: [
+            {
+                day: "Sunday",
+                time: "11:00 AM",
+            },
+        ],
+        languages: ["English"],
+        image: "https://s3-media0.fl.yelpcdn.com/bphoto/UHQYjTBPcLSpxhaRhtKG8Q/348s.jpg",
+        website: "https://www.universitybiblechurch.com/ubc-sunday-schedule/",
+    },
+    {
+        name: "The Commons LA Church",
+        region: "Westside",
+        services: [
+            {
+                day: "Sunday",
+                time: "10:00 AM",
+            },
+        ],
+        languages: ["English"],
+        image: "https://images.squarespace-cdn.com/content/v1/593f2d7e893fc090cfb564eb/1534803065963-F1D6MS55Z9SUG2UQYLZ3/TCLAeaster2018-23.jpg",
+        website: "https://www.thecommonsla.com/#home-1",
+    },
     { // SAN GABRIEL VALLEY
         name: "Saint Anthony Catholic Church",
         region: "San Gabriel Valley",
@@ -267,11 +452,11 @@ let churches = [
                 time: "5:00 PM",
             },
             {
-                day: "Monday to Saturday",
+                day: "Monday-Saturday",
                 time: "8:00 AM",
             },
             {
-                day: "Monday to Saturday",
+                day: "Monday-Saturday",
                 time: "9:00 AM",
             },
             {
@@ -293,7 +478,7 @@ let churches = [
             },
         ],
         languages: ["English"],
-        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYAx80OmvFzyjeTHby9wWpr0S_1pqzWVI7m_dMzax8Tg&s",
+        image: "https://lh3.googleusercontent.com/p/AF1QipMo4hXSTjQMp_C8aTD5H_0Lb5hSz1fi67lV2-SY=s680-w680-h510",
         website: "https://sangabrielcommunity.org/",
     },
     {
@@ -365,27 +550,27 @@ let churches = [
         region: "Antelope Valley",
         services: [
             {
-                day: "Sunday (Chapel 2)",
+                day: "Sunday",
                 time: "9:00 AM",
             },
             {
-                day: "Sunday (Chapel 1)",
+                day: "Sunday",
                 time: "10:00 AM",
             },
             {
-                day: "Sunday (Chapel 2)",
+                day: "Sunday",
                 time: "4:30 PM",
             },
             {
-                day: "Monday (Chapel 2)",
+                day: "Monday",
                 time: "11:30 AM",
             },
             {
-                day: "Tuesday (Chapel 2)",
+                day: "Tuesday",
                 time: "11:30 AM",
             },
             {
-                day: "Thursday (Chapel 2)",
+                day: "Thursday",
                 time: "11:30 AM",
             },
         ],
@@ -533,6 +718,65 @@ let churches = [
         image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpepEFMsjLo47UxpFwCF4dNlX7qgs3gwBYRsZY7dCJFw&s",
         website: "https://www.ielevatechurch.com/",
     },
+    {
+        name: "NorthPark Community Church",
+        region: "Santa Clarita",
+        services: [
+            {
+                day: "Sunday",
+                time: "10:30 AM",
+            },
+        ],
+        languages: ["English"],
+        image: "https://s3-media0.fl.yelpcdn.com/bphoto/xffAxcWbvQcPDKdGJFX-SA/348s.jpg",
+        website: "https://www.northpark.com/",
+    },
+    {
+        name: "Real Life Church Valencia",
+        region: "Santa Clarita",
+        services: [
+            {
+                day: "Sunday",
+                time: "8:30 AM",
+            },
+            {
+                day: "Sunday",
+                time: "10:00 AM",
+            },
+            {
+                day: "Sunday",
+                time: "11:30 AM",
+            },
+            {
+                day: "Thursdays",
+                time: "7:00 PM",
+            },
+        ],
+        languages: ["English"],
+        image: "https://reallifechurch.org/wp-content/uploads/Valencia_Campus_Building.jpg",
+        website: "https://reallifechurch.org/",
+    },
+    {
+        name: "Village Church",
+        region: "Santa Clarita",
+        services: [
+            {
+                day: "Sunday",
+                time: "10:00 AM",
+            },
+            {
+                day: "Sunday",
+                time: "10:45 AM",
+            },
+            {
+                day: "Sunday",
+                time: "2:00 PM",
+            },
+        ],
+        languages: ["English", "Spanish"],
+        image: "https://wp.thevillagechurch.org/wp-content/uploads/2019/09/village_church.png",
+        website: "https://thevillagechurch.org/",
+    },
 ];
 
 // This function adds cards the page to display the data in the array
@@ -541,16 +785,18 @@ function showCards() {
     cardContainer.innerHTML = "";
     const templateCard = document.querySelector(".card");
     
+    // Loop through each element in the churches array to make a card for each one
     for (let i = 0; i < churches.length; i++) {
         let church = churches[i];
 
-        const nextCard = templateCard.cloneNode(true); // Copy the template card
+        const nextCard = templateCard.cloneNode(true);
         editCardContent(nextCard, church.name, church.image, church.region, 
                         church.services, church.languages, church.website);
-        cardContainer.appendChild(nextCard); // Add new card to the container
+        cardContainer.appendChild(nextCard);
     }
 }
 
+// This function edits the content of the card based off of new data
 function editCardContent(card, newTitle, newImageURL, newRegion, 
                         newServices, newLanguages, newWebsite) {
     card.style.display = "block";
@@ -559,7 +805,7 @@ function editCardContent(card, newTitle, newImageURL, newRegion,
     const link = cardHeader.querySelector("a");
     link.textContent = newTitle;
     link.href = newWebsite;
-    link.target = "_blank"; // Open the link in a new tab
+    link.target = "_blank";
 
     const cardImage = card.querySelector("img");
     cardImage.src = newImageURL;
@@ -568,9 +814,8 @@ function editCardContent(card, newTitle, newImageURL, newRegion,
     const cardRegion = card.querySelector(".region");
     cardRegion.textContent = "Region: " + newRegion;
 
-    // Display the services
     const serviceList = card.querySelector(".service-list");
-    serviceList.innerHTML = ""; // Clear any existing services
+    serviceList.innerHTML = ""; 
 
     // Loop through the services array and add each service as a bullet point
     newServices.forEach(newServices => {
@@ -581,7 +826,7 @@ function editCardContent(card, newTitle, newImageURL, newRegion,
 
     // Concatenate elements in languages array to create one string with all languages
     const languageList = card.querySelector(".language-list");
-    languageList.innerHTML = ""; // Clear any existing languages
+    languageList.innerHTML = "";
     const languagesItem = document.createElement("li");
     languagesItem.textContent = "Languages: " + newLanguages.join(", ");
     languageList.appendChild(languagesItem);
@@ -590,12 +835,11 @@ function editCardContent(card, newTitle, newImageURL, newRegion,
 // This function adds filter buttons to the page
 function showFilterButtons(churches) {
     const filterButtonsContainer = document.getElementById("filter-buttons");
-
     const regions = getUniqueRegions(churches);
-
     const allButton = createFilterButton("All");
     filterButtonsContainer.appendChild(allButton);
 
+    // Loop through the regions array to create a button for each one
     regions.forEach(region => {
         const button = createFilterButton(region);
         filterButtonsContainer.appendChild(button);
@@ -606,7 +850,7 @@ function showFilterButtons(churches) {
 function getUniqueRegions(churches) {
     const regions = new Set(); // a set stores unique, individual items (useful for retrieving unique regions)
     churches.forEach(church => regions.add(church.region)); 
-    return Array.from(regions); // making a new array to return (arrays are used to iterate through each region)
+    return Array.from(regions); // making a new array to return (because arrays are used in showFilterButtons() function)
 }
 
 // Helper function to create a filter button
@@ -621,6 +865,8 @@ function createFilterButton(region) {
 // This function adds event listeners to the filter buttons
 function addFilterButtonListeners() {
     const filterButtons = document.querySelectorAll('.button-74');
+
+    // Loop through each filter button to add event listeners to each one
     filterButtons.forEach(button => {
         const region = button.dataset.region; 
         button.addEventListener('click', () => {
@@ -629,17 +875,24 @@ function addFilterButtonListeners() {
     });
 }
 
+// CODE LOOKS BEAUTIFUL AND EFFECIENT AND COMMENTED UP UNTIL HERE
+
 // This function filters the cards based on the selected region
 function filterCardsByRegion(region) {
     const cards = document.querySelectorAll('.card');
     const blueprintCardIndex = cards.length - 1; // to not show the predefined html card
 
+
+
     cards.forEach((card, index) => {
+        // console.log("pre cardRegion" + cardRegion);
         const cardRegion = card.querySelector('.region').textContent.replace('Region: ', '');
         
         if (index === blueprintCardIndex) {
             card.style.display = 'none';
         } else if (region.toLowerCase() === 'all' || cardRegion.toLowerCase() === region.toLowerCase()) {
+            console.log("region: " + region);
+            console.log("cardRegion: " + cardRegion);
             card.style.display = 'block';
         } else {
             card.style.display = 'none'; 
@@ -664,19 +917,18 @@ function searchByName() {
     const searchInput = document.getElementById("searchInput");
     const searchQuery = searchInput.value.trim().toLowerCase(); // Trim whitespace and convert to lowercase
     const displayedCards = document.querySelectorAll('.card'); // Select all cards
-    
+
     displayedCards.forEach((card, index) => {
         const cardTitle = card.querySelector('h2').textContent.toLowerCase(); // Get the church name from the card
 
         if (index === blueprintCardIndex) {
             card.style.display = 'none';
-        }
-        else if (searchQuery === '') {
-            card.style.display = 'block'; 
+        } else if (searchQuery === '') {
+            card.style.display = 'block';
         } else if (cardTitle.includes(searchQuery)) {
             card.style.display = 'block'; 
         } else {
-            card.style.display = 'none'; 
+            card.style.display = 'none';
         }
     });
 }
