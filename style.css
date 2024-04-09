@@ -5,17 +5,53 @@ body {
 }
 
 .main-header {
-    background-color: rgba(0, 0, 0, .3);
-    padding-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+    background-color: rgba(20, 19, 19, 0.95);
+    padding: 0.3rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+.title, .smaller-titles {
+  font-size: 0.75rem;
+  font-family: "Arial";
+  font-weight: bold;
+  font-variant: small-caps;
+  color: white;
+  cursor: pointer;
 }
 
 .title {
-    text-align: center;
-    margin: 0;
-    font-size: 8em;
-    font-family: "Helvetica";
-    font-weight: normal;
-    color: white;
+  font-size: 1.8rem; 
+  text-align: left; 
+}
+
+.smaller-titles {
+  display: flex;
+  gap: 3rem;
+  justify-content: flex-end; 
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.search-input {
+  font-family: "Comic Sans MS", cursive;
+  padding: 0.65rem; 
+  border: 3px solid;
+  border-radius: 3rem; 
+  font-size: 1.4rem; 
+  text-align: left; 
+  width: 60rem;
+  margin-right: 1rem;
 }
 
 #card-container {
@@ -23,7 +59,7 @@ body {
     justify-content: center;
     margin: 20px;
     flex-wrap: wrap;
-    gap: 20px; /* Adjust gap between cards */
+    gap: 2rem;
 }
 
 .card {
@@ -57,7 +93,7 @@ body {
     padding: 10px;
 }
 
-/* Credit to getcssscan.com */
+/* CREDIT AND THANK YOU TO getcssscan.com */
 .button-74 {
   background-color: #f4f2f1;
   border: 2px solid #422800;
@@ -77,18 +113,18 @@ body {
   touch-action: manipulation;
 }
 
-/* Credit to getcssscan.com */
+/* CREDIT AND THANK YOU TO getcssscan.com */
 .button-74:hover {
   background-color: #fff;
 }
 
-/* Credit to getcssscan.com */
+/* CREDIT AND THANK YOU TO getcssscan.com */
 .button-74:active {
   box-shadow: #422800 2px 2px 0 0;
   transform: translate(2px, 2px);
 }
 
-/* Credit to getcssscan.com */
+/* CREDIT AND THANK YOU TO getcssscan.com */
 @media (min-width: 768px) {
   .button-74 {
     min-width: 120px;

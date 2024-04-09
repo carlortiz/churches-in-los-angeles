@@ -23,11 +23,23 @@
  * 
  */
 
+/*
+CREDIT AND THANK YOU TO every single church website for information.
+https://www.theshepherd.org/location, https://northridgeumc.org/, 
+https://laplacita.mordntedigital.com/, https://olacathedral.org/mass-schedule,
+https://olacathedral.org/mass-schedule, and every other website included, etc...
+*/
+
+/*
+CREDIT AND THANK YOU TO Yelp, Google Images, Google Maps for images.
+Full credit goes to the respective owners of these photos.
+These images were not taken by me, I do not take any credit for them.
+If any issues arise please do not hesitate to contact me and I will take them down,
+and/or include your name for credit, and/or any other requests, etc...
+Email: mr.carlortiz@gmail.com
+*/
+
 // This array of objects stores all the data for each individual church.
-// Credit to the church websites for the information
-// These images were not taken by me and have been taken from Yelp & Google Images
-// Credit to image owners, if any issues arise please contact me and I will take it down:
-// Email: mr.carlortiz@gmail.com
 let churches = [
     { // SAN FERNANDO VALLEY
         name: "Sheperd of the Hills Church - Porter Ranch",
