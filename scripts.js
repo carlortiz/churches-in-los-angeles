@@ -785,7 +785,7 @@ function showCards() {
     cardContainer.innerHTML = "";
     const templateCard = document.querySelector(".card");
     
-    // Loop through each element in the churches array to make a card for each one
+    // Loops through each element in the churches array to make a card for each one
     for (let i = 0; i < churches.length; i++) {
         let church = churches[i];
 
@@ -812,12 +812,12 @@ function editCardContent(card, newTitle, newImageURL, newRegion,
     cardImage.alt = "Image Coming Soon";
 
     const cardRegion = card.querySelector(".region");
-    cardRegion.textContent = "Region: " + newRegion;
+    cardRegion.textContent = newRegion;
 
     const serviceList = card.querySelector(".service-list");
     serviceList.innerHTML = ""; 
 
-    // Loop through the services array and add each service as a bullet point
+    // Loops through the services array and add each service as a bullet point
     newServices.forEach(newServices => {
         const serviceItem = document.createElement("li");
         serviceItem.textContent = `${newServices.day}, ${newServices.time}`;
@@ -839,7 +839,7 @@ function showFilterButtons(churches) {
     const allButton = createFilterButton("All");
     filterButtonsContainer.appendChild(allButton);
 
-    // Loop through the regions array to create a button for each one
+    // Loops through the regions array to create a button for each one
     regions.forEach(region => {
         const button = createFilterButton(region);
         filterButtonsContainer.appendChild(button);
@@ -875,24 +875,18 @@ function addFilterButtonListeners() {
     });
 }
 
-// CODE LOOKS BEAUTIFUL AND EFFECIENT AND COMMENTED UP UNTIL HERE
-
 // This function filters the cards based on the selected region
 function filterCardsByRegion(region) {
     const cards = document.querySelectorAll('.card');
-    const blueprintCardIndex = cards.length - 1; // to not show the predefined html card
+    const blueprintCardIndex = cards.length - 1;
 
-
-
+    // Loops through each card and check if it's appropriate to show based on filters
     cards.forEach((card, index) => {
-        // console.log("pre cardRegion" + cardRegion);
-        const cardRegion = card.querySelector('.region').textContent.replace('Region: ', '');
+        const cardRegion = card.querySelector('.region').textContent;
         
         if (index === blueprintCardIndex) {
             card.style.display = 'none';
         } else if (region.toLowerCase() === 'all' || cardRegion.toLowerCase() === region.toLowerCase()) {
-            console.log("region: " + region);
-            console.log("cardRegion: " + cardRegion);
             card.style.display = 'block';
         } else {
             card.style.display = 'none'; 
@@ -900,7 +894,7 @@ function filterCardsByRegion(region) {
     });
 }
 
-// This function adds event listener to the search input field
+// This function adds an event listener to the search input field
 function addSearchEventListener() {
     const searchButton = document.getElementById("searchButton");
     searchButton.addEventListener("click", searchByName);
@@ -911,22 +905,22 @@ function addSearchEventListener() {
     });
 }
 
+// This function takes in the search query and displays the appropriate card(s)
 function searchByName() {
-    const cards = document.querySelectorAll('.card');
-    const blueprintCardIndex = cards.length - 1; // to not show the predefined html card
     const searchInput = document.getElementById("searchInput");
-    const searchQuery = searchInput.value.trim().toLowerCase(); // Trim whitespace and convert to lowercase
-    const displayedCards = document.querySelectorAll('.card'); // Select all cards
+    const searchQuery = searchInput.value.toLowerCase(); 
+    
+    const cards = document.querySelectorAll('.card');
+    const blueprintCardIndex = cards.length - 1; 
 
-    displayedCards.forEach((card, index) => {
-        const cardTitle = card.querySelector('h2').textContent.toLowerCase(); // Get the church name from the card
+    // Loops through each card and checks to see if it should be displayed
+    cards.forEach((card, index) => {
+        const cardTitle = card.querySelector('h2').textContent.toLowerCase();
 
         if (index === blueprintCardIndex) {
             card.style.display = 'none';
-        } else if (searchQuery === '') {
+        } else if (searchQuery === '' || cardTitle.includes(searchQuery)) {
             card.style.display = 'block';
-        } else if (cardTitle.includes(searchQuery)) {
-            card.style.display = 'block'; 
         } else {
             card.style.display = 'none';
         }
