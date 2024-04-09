@@ -2,8 +2,10 @@ html,
 body {
     margin: 0;
     padding: 0;
+    background-color: rgb(253, 250, 238);
 }
 
+/* CREDIT AND THANK YOU to CSS Flexbox */
 .main-header {
     display: flex;
     flex-direction: row;
@@ -54,6 +56,57 @@ body {
   margin-right: 1rem;
 }
 
+.filter-buttons {
+  margin-left: 5rem;
+  margin-right: 1rem;
+}
+
+/* CREDIT AND THANK YOU TO getcssscan.com */
+.button-74, .search-button {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 1.1rem;
+  background-color: #f4f2f1;
+  border: 2px solid #422800;
+  border-radius: 30px;
+  box-shadow: #422800 4px 4px 0 0;
+  color: #422800;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 0 18px;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-74 {
+  margin-bottom: 1rem;
+}
+
+/* CREDIT AND THANK YOU TO getcssscan.com */
+.button-74:hover, .search-button:hover {
+  background-color: #fff;
+}
+
+/* CREDIT AND THANK YOU TO getcssscan.com */
+.button-74:active, .search-button:active {
+  box-shadow: #422800 2px 2px 0 0;
+  transform: translate(2px, 2px);
+}
+
+/* CREDIT AND THANK YOU TO getcssscan.com */
+@media (min-width: 768px) {
+  .button-74, .search-button {
+    min-width: 120px;
+    padding: 0 25px;
+  }
+}
+
 #card-container {
     display: flex;
     justify-content: center;
@@ -65,9 +118,10 @@ body {
 .card {
     width: 300px;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 15px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     margin: 5px;
+    background-color: white;
 }
 
 .card-content {
@@ -91,43 +145,4 @@ body {
     justify-content: center;
     background-color: rgba(0, 0, 0, .3);
     padding: 10px;
-}
-
-/* CREDIT AND THANK YOU TO getcssscan.com */
-.button-74 {
-  background-color: #f4f2f1;
-  border: 2px solid #422800;
-  border-radius: 30px;
-  box-shadow: #422800 4px 4px 0 0;
-  color: #422800;
-  cursor: pointer;
-  display: inline-block;
-  font-weight: 600;
-  font-size: 18px;
-  padding: 0 18px;
-  line-height: 50px;
-  text-align: center;
-  text-decoration: none;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-}
-
-/* CREDIT AND THANK YOU TO getcssscan.com */
-.button-74:hover {
-  background-color: #fff;
-}
-
-/* CREDIT AND THANK YOU TO getcssscan.com */
-.button-74:active {
-  box-shadow: #422800 2px 2px 0 0;
-  transform: translate(2px, 2px);
-}
-
-/* CREDIT AND THANK YOU TO getcssscan.com */
-@media (min-width: 768px) {
-  .button-74 {
-    min-width: 120px;
-    padding: 0 25px;
-  }
 }
