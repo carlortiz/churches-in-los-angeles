@@ -361,19 +361,19 @@ let churches = [
         services: [
             {
                 day: "Sunday",
-                time: "9:00 AM (English)",
+                time: "9:00 AM",
             },
             {
                 day: "Sunday",
-                time: "9:00 PM (Spanish)",
+                time: "9:00 AM",
             },
             {
                 day: "Sunday",
-                time: "11:00 AM (English)",
+                time: "11:00 AM",
             },
             {
                 day: "Sunday",
-                time: "11:00 AM (Farsi)",
+                time: "11:00 AM",
             },
         ],
         languages: ["English", "Spanish", "Farsi"],
@@ -798,7 +798,7 @@ function showCards() {
 
 // This function edits the content of the card based off of new data
 function editCardContent(card, newTitle, newImageURL, newRegion, 
-                        newServices, newLanguages, newWebsite) {
+    newServices, newLanguages, newWebsite) {
     card.style.display = "block";
 
     const cardHeader = card.querySelector("h2");
@@ -812,24 +812,24 @@ function editCardContent(card, newTitle, newImageURL, newRegion,
     cardImage.alt = "Image Coming Soon";
 
     const cardRegion = card.querySelector(".region");
-    cardRegion.textContent = newRegion;
+    cardRegion.textContent = "Region: " + newRegion;
 
     const serviceList = card.querySelector(".service-list");
     serviceList.innerHTML = ""; 
 
-    // Loops through the services array and add each service as a bullet point
+    // Loop through the services array and add each service as a bullet point
     newServices.forEach(newServices => {
-        const serviceItem = document.createElement("li");
-        serviceItem.textContent = `${newServices.day}, ${newServices.time}`;
-        serviceList.appendChild(serviceItem);
-    });
+    const serviceItem = document.createElement("li");
+    serviceItem.textContent = `${newServices.day}, ${newServices.time}`;
+    serviceList.appendChild(serviceItem);
+});
 
-    // Concatenate elements in languages array to create one string with all languages
-    const languageList = card.querySelector(".language-list");
-    languageList.innerHTML = "";
-    const languagesItem = document.createElement("li");
-    languagesItem.textContent = "Languages: " + newLanguages.join(", ");
-    languageList.appendChild(languagesItem);
+// Concatenate elements in languages array to create one string with all languages
+const languageList = card.querySelector(".language-list");
+languageList.innerHTML = "";
+const languagesItem = document.createElement("li");
+languagesItem.textContent = "Languages: " + newLanguages.join(", ");
+languageList.appendChild(languagesItem);
 }
 
 // This function adds filter buttons to the page
@@ -882,7 +882,7 @@ function filterCardsByRegion(region) {
 
     // Loops through each card and check if it's appropriate to show based on filters
     cards.forEach((card, index) => {
-        const cardRegion = card.querySelector('.region').textContent;
+        const cardRegion = card.querySelector('.region').textContent.replace('Region: ', '');
         
         if (index === blueprintCardIndex) {
             card.style.display = 'none';
@@ -893,6 +893,7 @@ function filterCardsByRegion(region) {
         }
     });
 }
+
 
 // This function adds an event listener to the search input field
 function addSearchEventListener() {
